@@ -9,9 +9,9 @@
 
 % Configuracion de encabezados y pies de pagina
 \pagestyle{fancy}
-\lhead{}
-\rhead{}
-\lfoot{Asignatura}
+\lhead{Vladislav Nikolov Vasilev}
+\rhead{Asignatura}
+\lfoot{Grado en Ingeniería Informática}
 \cfoot{}
 \rfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}		% Linea cabeza de pagina
@@ -22,13 +22,44 @@
 
 % Pagina de titulo
 \begin{titlepage}
+
 \begin{minipage}{\textwidth}
 
+\centering
+
+\includegraphics[scale=0.5]{img/ugr.png}\\
+
+\textsc{\Large Asignatura\\[0.2cm]}
+\textsc{GRADO EN INGENIERÍA INFORMÁTICA}\\[1cm]
+
+\noindent\rule[-1ex]{\textwidth}{1pt}\\[1.5ex]
+\textsc{{\Huge titulo\\}}
+\noindent\rule[-1ex]{\textwidth}{2pt}\\[3.5ex]
+
+\end{minipage}
+
+\vspace{1.5cm}
+
+\begin{minipage}{\textwidth}
+
+\centering
+
+\textbf{Autor}\\ {Vladislav Nikolov Vasilev}\\[2.5ex]
+\textbf{Rama}\\ {Computación y Sistemas Inteligentes}\\[2.5ex]
+
+\includegraphics[scale=0.3]{img/etsiit.jpeg}
+
+\vspace{0.2cm}
+\textsc{Escuela Técnica Superior de Ingenierías Informática y de Telecomunicación}\\
+\vspace{1cm}
+\textsc{Curso 2018-2019}
 \end{minipage}
 \end{titlepage}
 
 \pagenumbering{arabic}
 \tableofcontents
+\thispagestyle{empty}				% No usar estilo en la pagina de indice
+
 \newpage
 
 \end{document}
