@@ -6,6 +6,7 @@
 \usepackage{fancyhdr}						% Modificar encabezados y pies de pagina
 \usepackage{float}							% Insertar figuras
 \usepackage[textwidth=390pt]{geometry}		% Anchura de la pagina
+\usepackage[nottoc]{tocbibind}				% Referencias (no incluir num pagina indice en Indice)
 
 % Configuracion de encabezados y pies de pagina
 \pagestyle{fancy}
@@ -46,10 +47,11 @@
 
 \textbf{Autor}\\ {Vladislav Nikolov Vasilev}\\[2.5ex]
 \textbf{Rama}\\ {Computación y Sistemas Inteligentes}\\[2.5ex]
+\vspace{0.3cm}
 
 \includegraphics[scale=0.3]{img/etsiit.jpeg}
 
-\vspace{0.2cm}
+\vspace{0.7cm}
 \textsc{Escuela Técnica Superior de Ingenierías Informática y de Telecomunicación}\\
 \vspace{1cm}
 \textsc{Curso 2018-2019}
@@ -61,6 +63,16 @@
 \thispagestyle{empty}				% No usar estilo en la pagina de indice
 
 \newpage
+
+\newpage
+
+\begin{thebibliography}{5}
+
+\bibitem{nombre-referencia}
+Texto referencia
+\\\url{https://url.referencia.com}
+
+\end{thebibliography}
 
 \end{document}
 
